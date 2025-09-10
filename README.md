@@ -1,4 +1,4 @@
-# Optimizing Data Talent Acquisition and Compensation Strategy  
+# Optimizing Data Talent Acquisition, Compensation Strategy  and Scalability
 ### A Data-Driven Analysis of the Global Data Science Job Market using Sheets & Tableau  
 
 ---
@@ -13,46 +13,50 @@
 7. [Results & Findings](#results--findings)  
 8. [Recommendations](#recommendations)  
 9. [Limitations](#limitations)  
-10. [References & Links](#references--links)  
+10. [References & Links](#references--links)   
 
 ---
 
 ## 1. Project Overview  
-**Stakeholder:** A mid-sized technology company (hypothetical).  
+
+**Stakeholder:** LifeTech Inc. *(Hypothetical Mid-Sized US Tech Company)*  
 
 **Business Problem:**  
-The company I call ‘LifeTech Inc.’ struggles to attract and retain top data professionals. Job offers are frequently rejected, and leadership suspects their salary and remote work policies are not aligned with market standards.  
+LifeTech is facing challenges in **hiring and retaining top data talent**. Job offers are frequently rejected, and many candidates demand salaries higher than current ranges. At the same time, the company wants to **scale operations without proportionally scaling costs**.  
 
-**Goal:**  
-Analyze global salary trends, job demand, and the impact of remote work using a real-world dataset. Provide actionable recommendations for competitive compensation and hiring strategies.  
+**Project Goal:**  
+Analyze global salary trends, job title demand, and the role of remote work using **Google Sheets for preparation** and **Tableau for visualization**. The objective is to deliver **scalable hiring insights** that balance competitiveness with cost efficiency.  
 
 ---
 
 ## 2. Data Sources  
-- **Primary Dataset:** Data Science Job Salaries (2020–2022)  
-- **Records:** 606 rows  
-- **Features:** 12 columns (job title, experience level, salary in USD, company location, employee residence, company size, remote ratio, employment type, etc.)  
+
+- **Primary Dataset:** `ds_salaries.csv`  
+- **Size:** 606 records, 12 columns  
+- **Features:** job title, experience level, employee residence, company location, company size, salary in USD, remote ratio, employment type  
+- **Timeframe:** 2020–2022  
 - **Source:** [Kaggle – Data Science Job Salaries](https://www.kaggle.com/datasets/ruchi798/data-science-job-salaries)  
 
 ---
 
 ## 3. Tools Used  
-- **Google Sheets** → Data cleaning, preparation, feature engineering  
-- **Tableau Public** → Exploratory analysis & interactive dashboard  
-- **GitHub** → Documentation, dataset storage, and sharing dashboard links  
+
+- **Google Sheets** → Data cleaning, filtering, and feature creation  
+- **Tableau Public** → Exploratory data analysis, interactive dashboard, visual insights  
+- **GitHub** → Documentation and project repository  
 
 ---
 
 ## 4. Data Cleaning & Preparation (Sheets)  
+
 Steps taken in Google Sheets:  
 
-1. **Removed unnecessary column**  
-   - Dropped index column `F1`  
-2. **Standardized text**  
-   - Used `=PROPER()` to ensure consistent formatting for job titles and experience levels  
-3. **Created new feature: Remote Work Type**  
-   ```excel
-   =IFS(C2=0,"On-Site",C2=50,"Hybrid",C2=100,"Fully Remote")
+- **Removed Unnecessary Columns** → Dropped index column (`F1`)  
+- **Standardized Text** → Used `=PROPER()` on job titles & experience levels to standardize text.
+- I used Aliases in Tableau to change the elements of the remote ratio column from 0, 50, 100 to "Onsite", "Hybrid" and "Remote"
+- I used count(ds_salaries) to ascertain the number of representations in each category
+
+---
 
 ## 5. Exploratory Data Analysis (Tableau)
 
@@ -76,11 +80,11 @@ Interactive visualizations were built in Tableau Public to explore key aspects o
 ---
 
 ### 6. Data Analysis
-
+ 
 **Salary Benchmarks (US):**
 - Senior roles → $150k–$165k
 - Expert-level roles → $200k+
-- Entry-Role -> $80k+
+- Entry-Role -> $90k+
 
 **Remote Work Premium:**
 - Fully Remote roles command higher pay compared to hybrid
@@ -89,12 +93,12 @@ Interactive visualizations were built in Tableau Public to explore key aspects o
 The top 5 earners in the Job Title category are 
 - Research Scientist
 - Machine Learning Engineer
-- Data Engineer salaries
 - Data Scientist
+- Data Engineer
 - Data Analyst
 
 **Geographic Distribution:**
-- US holds ~70% of employees
+- US holds ~96% of employees
 - UK, Canada, India, Germany are significant talent hubs
 
 ---
@@ -113,7 +117,7 @@ The top 5 earners in the Job Title category are
 ✅ **Revise Salary Bands** → Offer $150k–$180k for senior roles; $200k+ for expert roles  
 ✅ **Adopt Remote-First Hiring** → Expand hiring beyond local geographies  
 ✅ **Standardize Job Titles** → Use market-recognized titles (e.g., Senior Data Engineer)  
-✅ **Tap Global Talent** → Pilot remote hires in UK, Canada, India  
+✅ **Tap Global Talent** → Pilot remote hires in UK, Canada, India and Nigeria 
 
 ---
 
@@ -123,12 +127,13 @@ The top 5 earners in the Job Title category are
 - Dataset covers only 2020–2022 (market may have shifted since then)
 - Currency & cost-of-living differences not accounted for
 - Limited records for Expert-level roles (only 6 entries)
+- Most employees that were surveyed based in the US (about 260) from a sample of 606 hence a selection bias.
 
 ---
 
 ### 10. References & Links
 
 - **Dataset:** [Kaggle – Data Science Job Salaries](https://www.kaggle.com/datasets/ruchi798/data-science-job-salaries)
-- **Tableau Dashboard:** [Insert your Tableau Public link here]
+- **Tableau Dashboard:** [https://public.tableau.com/views/Data_Science_Employment/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link]
 - 
 📌 *This project was built using Google Sheets and Tableau, and is documented here for transparency and reproducibility.*

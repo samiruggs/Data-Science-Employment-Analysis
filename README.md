@@ -60,6 +60,9 @@ Steps taken in Google Sheets:
 
 ## 5. Exploratory Data Analysis (Tableau)
 
+<img width="999" height="799" alt="Dashboard 1" src="https://github.com/user-attachments/assets/665becb6-5aec-45ff-a805-d7d5138fab4b" />
+
+
 Interactive visualizations were built in Tableau Public to explore key aspects of the data science job market:
 
 - **Top 5 Job Titles:** Research Scientist, Machine Learning Engineer, Data Engineer, Data Scientist, Data Analyst
@@ -80,6 +83,9 @@ Interactive visualizations were built in Tableau Public to explore key aspects o
 ---
 
 ### 6. Data Analysis
+
+<img width="999" height="799" alt="Dashboard 1 (1)" src="https://github.com/user-attachments/assets/752869e9-8a21-4be0-a299-4f6dabf18222" />
+
  
 **Salary Benchmarks (US):**
 - Senior roles → $150k–$165k

@@ -2,7 +2,9 @@
 ### A Data-Driven Analysis of the Global Data Science Job Market using Sheets & Tableau  
 
 <img width="1024" height="1024" alt="Gemini_Generated_Image_cfic2dcfic2dcfic" src="https://github.com/user-attachments/assets/f3552307-d508-4c57-9bb6-6a2b45d56ea1" />
-[^1]: Image generated using gemini
+                                                                       Image generated using gemini
+
+
 ---
 
 ## 📑 Table of Contents  
